@@ -8,7 +8,8 @@
 
 The segmented polynomial of a cubic hermite spline is defined by the following equation.
 
-![define cubic spline](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/define_cubic_spline.svg)
+![define cubic spline](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/define_cubic_spline.svg)  
+![deltax](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/deltax.svg)  
 
 These are the constraints that must be met.
 
