@@ -30,3 +30,17 @@ In the same way, we can find the Hermite spline of the fifth order. To use this,
 
 ![coef quintic spline](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/coef_quintic_spline.svg)  
 ![hermite basic quintic](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/hermite_basic_quintic.svg)  
+
+## Higher-Order Hermite Spline
+
+Even higher-order Hermite splines can be defined. However, these are rarely used.
+
+### Septic
+
+![coef septic spline](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/coef_septic_spline.svg)  
+![hermite basic septic](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/hermite_basic_septic.svg)  
+![hermite basic septic zoom](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/hermite_basic_septic_zoom.svg)  
+
+### Nonic
+
+![coef nonic spline](https://github.com/tk-yoshimura/HermiteSpline/blob/main/figures/coef_nonic_spline.svg)  
