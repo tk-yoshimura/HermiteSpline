@@ -1,0 +1,108 @@
+\begin{eqnarray*}
+  p(t) &=& y_0 h_{y0}(t)+g_0 h_{g0}(t)+y_1 h_{y1}(t)+g_1 h_{g1}(t) \\
+  h_{*}(t) &=& a_{*}+b_{*} t+c_{*} t^2+d_{*} t^3
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  p(0) &=& y_0 a_{y0} + g_0 a_{g0}+y_1 a_{y1}+g_1 a_{g0} = y_0 \\
+  p'(0) &=& y_0 b_{y0} + g_0 b_{g0}+y_1 b_{y1}+b_1 a_{g0} = g_0 \\
+  p(1) &=& y_0 (a_{y0} + b_{y0} + c_{y0} + d_{y0}) + g_0 (a_{g0} + b_{g0} + c_{g0} + d_{g0}) \\
+  &&+y_1 (a_{y1} + b_{y1} + c_{y1} + d_{y1}) + g_1  (a_{g1} + b_{g1} + c_{g1} + d_{g1}) = y_1 \\
+  p'(1) &=& y_0 (b_{y0} + 2 c_{y0} + 3 d_{y0}) + g_0 (b_{g0} + 2 c_{g0} + 3 d_{g0}) \\
+  &&+y_1 (b_{y1} + 2 c_{y1} + 3 d_{y1}) + g_1  (b_{g1} + 2 c_{g1} + 3 d_{g1}) = g_1
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \left[ 
+  \begin{matrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    1 & 1 & 1 & 1 \\
+    0 & 1 & 2 & 3 \\
+  \end{matrix} \right]
+  \left[ 
+  \begin{matrix}
+    a_{y0} & a_{g0} & a_{y1} & a_{g1} \\
+    b_{y0} & b_{g0} & b_{y1} & b_{g1} \\
+    c_{y0} & c_{g0} & c_{y1} & c_{g1} \\
+    d_{y0} & d_{g0} & d_{y1} & d_{g1} \\
+  \end{matrix} \right]
+  \left[ 
+  \begin{matrix}
+    y0 \\
+    g0 \\
+    y1 \\
+    g1 \\
+  \end{matrix} \right]
+  = 
+  \left[ 
+  \begin{matrix}
+    y0 \\
+    g0 \\
+    y1 \\
+    g1 \\
+  \end{matrix} \right]
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \left[ 
+  \begin{matrix}
+    a_{y0} & a_{g0} & a_{y1} & a_{g1} \\
+    b_{y0} & b_{g0} & b_{y1} & b_{g1} \\
+    c_{y0} & c_{g0} & c_{y1} & c_{g1} \\
+    d_{y0} & d_{g0} & d_{y1} & d_{g1} \\
+  \end{matrix} \right] = 
+  \left[ 
+  \begin{matrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    1 & 1 & 1 & 1 \\
+    0 & 1 & 2 & 3 \\
+  \end{matrix} \right]^{-1} = 
+  \left[ 
+  \begin{matrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    -3 & -2 & 3 & -1 \\
+    2 & 1 & -2 & 1 \\
+  \end{matrix} \right]
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  p(t) &=& y_0 h_{y0}(t)+g_0 h_{g0}(t)+gg_0 h_{gg0}(t)+y_1 h_{y1}(t)+g_1 h_{g1}(t)+gg_1 h_{gg1}(t) \\
+  h_{*}(t) &=& a_{*}+b_{*} t+c_{*} t^2+d_{*} t^3+e_{*} t^4+f_{*} t^5
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  p(0) = y_0, ~~p'(0) = g_0, ~~p''(0) = gg_0, ~~p(1) = y_1, ~~p'(1) = g_1, ~~p''(1) = gg_1
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \left[ 
+  \begin{matrix}
+    a_{y0} & a_{g0} & a_{gg0} & a_{y1} & a_{g1} & a_{gg1} \\
+    b_{y0} & b_{g0} & b_{gg0} & b_{y1} & b_{g1} & b_{gg1} \\
+    c_{y0} & c_{g0} & c_{gg0} & c_{y1} & c_{g1} & c_{gg1} \\
+    d_{y0} & d_{g0} & d_{gg0} & d_{y1} & d_{g1} & d_{gg1} \\
+    e_{y0} & e_{g0} & e_{gg0} & e_{y1} & e_{g1} & e_{gg1} \\
+    f_{y0} & f_{g0} & f_{gg0} & f_{y1} & f_{g1} & f_{gg1} \\
+  \end{matrix} \right] = 
+  \left[ 
+  \begin{matrix}
+    1 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 2 & 0 & 0 & 0 \\
+    1 & 1 & 1 & 1 & 1 & 1 \\
+    0 & 1 & 2 & 3 & 4 & 5 \\
+    0 & 0 & 2 & 6 & 12 & 20 \\
+  \end{matrix} \right]^{-1} = 
+  \left[ 
+  \begin{matrix}
+    1   & 0  &  0 & 0   &  0 &   0 \\
+    0   & 1  &  0 & 0   &  0 &   0 \\
+    0   & 0  &  1/2 & 0   &  0 &   0 \\
+    -10 & -6 & -3/2 & 10  & -4 & 1/2 \\
+    15  &  8 &  3/2 & -15 &  7 &  -1 \\
+    -6  & -3 & -1/2 & 6   & -3 & 1/2 \\
+  \end{matrix} \right]
+\end{eqnarray*}
