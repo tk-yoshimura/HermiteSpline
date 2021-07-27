@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HermiteSpline", "HermiteSpline\HermiteSpline.csproj", "{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HermiteSplineTests", "HermiteSplineTests\HermiteSplineTests.csproj", "{5C51F8A4-78AF-44FE-9007-4174F0FFF459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C51F8A4-78AF-44FE-9007-4174F0FFF459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C51F8A4-78AF-44FE-9007-4174F0FFF459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C51F8A4-78AF-44FE-9007-4174F0FFF459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C51F8A4-78AF-44FE-9007-4174F0FFF459}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9A3F06D-C779-4C21-B51D-D65B8EAFB1B5}
+	EndGlobalSection
+EndGlobal
