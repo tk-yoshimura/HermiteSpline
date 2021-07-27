@@ -46,7 +46,7 @@ namespace HermiteSpline.ArbitraryInterval {
             }
 
             double x0 = Xs[index], y0 = Ys[index], g0 = Grads[index], gg0 = SecondGrads[index], ggg0 = ThirdGrads[index];
-            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index];
+            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index + 1];
 
             double dx = x1 - x0, t = (x - x0) / dx;
 
@@ -69,7 +69,7 @@ namespace HermiteSpline.ArbitraryInterval {
             }
 
             double x0 = Xs[index], y0 = Ys[index], g0 = Grads[index], gg0 = SecondGrads[index], ggg0 = ThirdGrads[index];
-            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index];
+            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index + 1];
 
             double dx = x1 - x0, t = (x - x0) / dx;
 
@@ -89,7 +89,7 @@ namespace HermiteSpline.ArbitraryInterval {
             }
 
             double x0 = Xs[index], y0 = Ys[index], g0 = Grads[index], gg0 = SecondGrads[index], ggg0 = ThirdGrads[index];
-            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index];
+            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index + 1];
 
             double dx = x1 - x0, t = (x - x0) / dx;
 
@@ -109,7 +109,7 @@ namespace HermiteSpline.ArbitraryInterval {
             }
 
             double x0 = Xs[index], y0 = Ys[index], g0 = Grads[index], gg0 = SecondGrads[index], ggg0 = ThirdGrads[index];
-            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index];
+            double x1 = Xs[index + 1], y1 = Ys[index + 1], g1 = Grads[index + 1], gg1 = SecondGrads[index + 1], ggg1 = ThirdGrads[index + 1];
 
             double dx = x1 - x0, t = (x - x0) / dx;
 
