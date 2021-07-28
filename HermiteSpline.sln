@@ -5,7 +5,10 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HermiteSpline", "HermiteSpline\HermiteSpline.csproj", "{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HermiteSplineTests", "HermiteSplineTests\HermiteSplineTests.csproj", "{5C51F8A4-78AF-44FE-9007-4174F0FFF459}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HermiteSplineTests", "HermiteSplineTests\HermiteSplineTests.csproj", "{5C51F8A4-78AF-44FE-9007-4174F0FFF459}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951} = {34E3EFF7-9AA2-4AB9-9F53-FEF4D9548951}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

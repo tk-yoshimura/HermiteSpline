@@ -12,5 +12,11 @@ namespace HermiteSpline.Tests {
             new double[] { 595, 635, 695, 795, 855, 875, 915, 935, 985, 1035, 1075 },
             new double[] { 0.644, 0.652, 0.644, 0.694, 0.907, 1.336, 2.169, 1.598, 0.916, 0.607, 0.603, 0.608 }
         );
+
+        public static (double[] xs, double[] ys, double[] ps) Akima => (
+            new double[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+            new double[] { 12, 15, 15, 10, 10, 10, 10.5, 15, 50, 60, 85 },
+            (new double[1401]).Select((_, i) => (i - 100) * 0.01).ToArray()
+        );
     }
 }

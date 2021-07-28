@@ -70,7 +70,7 @@ namespace HermiteSpline.ArbitraryInterval {
             if (arr.Count() != Length) {
                 throw new ArgumentException("Array length don't match.");
             }
-            if (arr.Any((y) => !double.IsFinite(y))) {
+            if (arr.Any((v) => !double.IsFinite(v))) {
                 throw new ArgumentException("Array contains invalid element.", nameof(arr));
             }
 
@@ -81,7 +81,7 @@ namespace HermiteSpline.ArbitraryInterval {
             if (arr.Length != Length) {
                 throw new ArgumentException("Array length don't match.");
             }
-            if (arr.Any((y) => !double.IsFinite(y))) {
+            if (arr.Any((v) => !double.IsFinite(v))) {
                 throw new ArgumentException("Array contains invalid element.", nameof(arr));
             }
 
